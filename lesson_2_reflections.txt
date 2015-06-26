@@ -1,2 +1,6 @@
 What happens when you initialize a repository? Why do you need to do it?
 .git directory is created. This initializes the framework for git to start tracking the files/changes.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Working Directory > Staging Area > Repository
+Files to be tracked are 'added' to the staging area, upon 'commit', only files in the staging area are commited to the repository. This gives flexibility to track only the required files and not everything in the working directory.
