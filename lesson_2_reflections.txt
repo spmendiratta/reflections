@@ -4,3 +4,18 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 Working Directory > Staging Area > Repository
 Files to be tracked are 'added' to the staging area, upon 'commit', only files in the staging area are commited to the repository. This gives flexibility to track only the required files and not everything in the working directory.
+
+How can you use the staging area to make sure you have one commit per logical change?
+'git diff --stage' lists the changes in 'Staging Area' and the 'Repository' - this can be utilized to make sure all the files realted to one logical change are committed at the same time.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Simplest case could be tracking 'Development', 'Test' and 'Production' branches.
+
+How do the diagrams help you visualize the branch structure?
+Obvious. It provides a snapshot of all that has happened to the prokect.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+All the changes(commits) from two branches are merged into one. It is easier to see the two change streams pictorially.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+This seems still quite tricky - it would seem manual merges are generally preferrable to automatics.
